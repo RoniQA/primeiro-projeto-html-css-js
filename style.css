@@ -14,9 +14,13 @@
 .navbar{
     position: fixed;
     width: 100%;
-    background: #00804b;
-    padding: 15px 0;
+    padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.sticky{
+     background: #00804b;
+     padding: 15px 0;
 }
 .max-width{
     display: flex;
@@ -28,6 +32,13 @@
     font-size: 35px;
     font-weight: 500;
 }
+.logo a span{
+    color: rgb(141, 233, 129);
+    transition: all 0.3s ease;
+}
+.sticky .logo a span{
+    color: #fff;
+}
 .menu li{
     list-style: none;
     display: inline-block;
@@ -37,11 +48,47 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0,3s ease;
+}
+.menu li a:hover{
+    color: rgb(141, 233, 129);
+}
+.sticky .menu li a:hover{
+    color: #fff;
 }
 /*...Home inicio...*/
-body{
-    background-image: url(image/hd-wallpaper-176722.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #fff;
+.home{
+    display: flex;
+    background: url(image/tree-736885.jpg) no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 500;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: rgb(141, 233, 129);
+    font-weight: 500;
+}
+
+/*..Menu..Mobile..*/
+.menu-btn{
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
 }
